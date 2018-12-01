@@ -12,17 +12,17 @@ public class JUnitTest {
 			
 			VenueCalcBL fc;
 			//test 1
-			fc = new VenueCalcBL(5,30,2);
-			assertEquals(150, fc.TotalAreaOfStorage, 0);
-			assertEquals(300, fc.TotalSum, 0);
+			fc = new VenueCalcBL(10,20,4);
+			assertEquals(200, fc.TotalAreaOfStorage, 0);
+			assertEquals(800, fc.TotalSum, 0);
 			
 			//test 2
-			fc = new VenueCalcBL(4.3,23.5,6);
-			assertEquals(101, fc.TotalAreaOfStorage, 0.05);
-			assertEquals(606, fc.TotalSum, 0.3);
+			fc = new VenueCalcBL(2.3,13.5,8);
+			assertEquals(31, fc.TotalAreaOfStorage, 0.05);
+			assertEquals(248, fc.TotalSum, 0.4);
 					
 			//test 3
-			fc = new VenueCalcBL(-5,35,-2);
+			fc = new VenueCalcBL(-5,15,-1);
 			assertEquals(0, fc.TotalAreaOfStorage, 0);
 			assertEquals(0, fc.TotalSum, 0);
 			
